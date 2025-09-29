@@ -13,11 +13,15 @@ class DataService {
       lastDietPlanDate: patient.lastDietPlanDate || null
     }));
     
+    // Initialize additional collections if missing
+    this.data.mealLogs = this.data.mealLogs || [];
+
     // Only try to load from localStorage if we're in the browser
     if (typeof window !== 'undefined') {
       const storedData = localStorage.getItem('ayursutra_patients');
       if (storedData) {
         this.data = JSON.parse(storedData);
+        this.data.mealLogs = this.data.mealLogs || [];
       } else {
         this.saveToStorage();
       }
@@ -499,6 +503,53 @@ class DataService {
   getActiveDietPlan(patientId) {
     const patientPlans = this.getDietPlansByPatientId(patientId);
     return patientPlans.find(plan => plan.status === 'Active') || null;
+  }
+
+  // Meal Logs
+  getMealLogsByPatientId(patientId) {
+    return (this.data.mealLogs || []).filter(log => log.patientId === patientId)
+      .sort((a, b) => new Date(b.date + ' ' + (b.time || '00:00')) - new Date(a.date + ' ' + (a.time || '00:00')));
+  }
+
+  addMealLog(logData) {
+    if (!this.data.mealLogs) {
+      this.data.mealLogs = [];
+    }
+
+    const newId = `ML${String(this.data.mealLogs.length + 1).padStart(4, '0')}`;
+    const newLog = {
+      id: newId,
+      patientId: logData.patientId,
+      date: logData.date || new Date().toISOString().split('T')[0],
+      time: logData.time || new Date().toTimeString().slice(0,5),
+      mealType: logData.mealType || 'Other',
+      items: logData.items || [],
+      notes: logData.notes || '',
+      calories: typeof logData.calories === 'number' ? logData.calories : null,
+      createdAt: new Date().toISOString()
+    };
+
+    this.data.mealLogs.push(newLog);
+    this.saveToStorage();
+    return newLog;
+  }
+
+  updateMealLog(id, updateData) {
+    if (!this.data.mealLogs) return null;
+    const index = this.data.mealLogs.findIndex(l => l.id === id);
+    if (index === -1) return null;
+    this.data.mealLogs[index] = { ...this.data.mealLogs[index], ...updateData };
+    this.saveToStorage();
+    return this.data.mealLogs[index];
+  }
+
+  deleteMealLog(id) {
+    if (!this.data.mealLogs) return false;
+    const index = this.data.mealLogs.findIndex(l => l.id === id);
+    if (index === -1) return false;
+    this.data.mealLogs.splice(index, 1);
+    this.saveToStorage();
+    return true;
   }
 }
 

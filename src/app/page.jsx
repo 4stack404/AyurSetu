@@ -58,6 +58,7 @@ const Navigation = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = '/Dietician/Dashboard')}
               className="px-4 py-2 text-[#7A5C3A] hover:text-[#4C8C4A] transition-colors font-medium"
             >
               Login
@@ -65,6 +66,15 @@ const Navigation = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = '/Patient/Dashboard')}
+              className="px-4 py-2 text-[#7A5C3A] hover:text-[#2A9D8F] transition-colors font-medium"
+            >
+              Patient Login
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = '/Dietician/Dashboard')}
               className="px-6 py-2 bg-gradient-to-r from-[#F4A300] to-[#2A9D8F] text-white rounded-full font-medium hover:shadow-lg transition-shadow"
             >
               Register
@@ -190,6 +200,7 @@ const HeroSection = () => {
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(76, 140, 74, 0.3)" }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => (window.location.href = '/Dietician/FoodDatabase')}
             className="px-8 py-4 bg-gradient-to-r from-[#4C8C4A] to-[#2A9D8F] text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Explore Food Database
