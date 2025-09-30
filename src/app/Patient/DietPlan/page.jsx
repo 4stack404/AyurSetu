@@ -19,7 +19,7 @@ export default function PatientDietPlanStandalone() {
             <div className="w-8 h-8 bg-gradient-to-br from-[#4C8C4A] to-[#2A9D8F] rounded-full flex items-center justify-center">
               <span className="text-white text-sm font-bold">A</span>
             </div>
-            <span className="text-xl font-bold text-[#7A5C3A]">Ayursutra</span>
+            <span className="text-xl font-bold text-[#7A5C3A]">AyurSetu</span>
           </div>
           <nav className="flex items-center space-x-2">
             <Link href="/Patient/Dashboard" className="px-3 py-2 rounded-lg text-[#7A5C3A] hover:bg-[#4C8C4A]/10">Dashboard</Link>

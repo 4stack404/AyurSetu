@@ -1,4 +1,4 @@
-# 🌿 Comprehensive Ayurvedic Food Database for Ayursutra
+# 🌿 Comprehensive Ayurvedic Food Database for AyurSetu
 
 ## Overview
 This database contains 50+ diverse food items with complete nutritional and Ayurvedic properties for diet chart automation and nutritional analysis.
@@ -130,4 +130,4 @@ This database contains 50+ diverse food items with complete nutritional and Ayur
 - ✅ Diverse cultural representation
 
 ---
-*This database is designed for Ayursutra's AI-powered nutrition platform and can be easily integrated into diet chart automation systems.*
+*This database is designed for AyurSetu's AI-powered nutrition platform and can be easily integrated into diet chart automation systems.*

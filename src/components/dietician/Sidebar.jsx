@@ -91,7 +91,7 @@ const Sidebar = ({ activeSection, setActiveSection, isCollapsed, setIsCollapsed,
                 <span className="text-white text-lg font-bold">A</span>
               </div>
               <div>
-                <h2 className="text-xl font-bold text-[#7A5C3A]">Ayursutra</h2>
+                <h2 className="text-xl font-bold text-[#7A5C3A]">AyurSetu</h2>
                 <p className="text-xs text-[#7A5C3A]/70 font-[var(--font-noto-serif-devanagari)]">
                   आहार पथ्य पट्टिका
                 </p>

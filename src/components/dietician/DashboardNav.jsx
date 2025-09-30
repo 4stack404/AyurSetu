@@ -63,7 +63,7 @@ const DashboardNav = () => {
               <span className="text-white text-xl font-bold" style={{ fontFamily: 'Inter, sans-serif' }}>A</span>
             </motion.div>
             <div>
-              <h1 className="text-2xl mr-10 font-bold text-[#7A5C3A]" style={{ fontFamily: 'Inter, sans-serif' }}>Ayursutra</h1>
+              <h1 className="text-2xl mr-10 font-bold text-[#7A5C3A]" style={{ fontFamily: 'Inter, sans-serif' }}>AyurSetu</h1>
               <p className="text-sm font-[var(--font-noto-serif-devanagari)] text-[#7A5C3A] font-semibold">
                 आहार पथ्य पट्टिका
               </p>
@@ -193,7 +193,7 @@ const DashboardNav = () => {
                   >
                     <div className="p-6 border-b border-[#4C8C4A]/10 bg-gradient-to-r from-[#4C8C4A]/5 to-[#2A9D8F]/5">
                       <p className="font-bold text-lg text-[#7A5C3A]">Dr. Priya Sharma</p>
-                      <p className="text-sm text-[#7A5C3A]/70">priya.sharma@ayursutra.com</p>
+                      <p className="text-sm text-[#7A5C3A]/70">priya.sharma@AyurSetu.com</p>
                       <p className="text-xs text-[#7A5C3A]/60 mt-1">Ayurvedic Dietitian</p>
                     </div>
                     <div className="py-3">

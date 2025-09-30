@@ -1,6 +1,6 @@
-# Ayursutra - AI-Powered Ayurvedic Nutrition Platform
+# AyurSetu - AI-Powered Ayurvedic Nutrition Platform
 
-A beautiful, modern landing page for Ayursutra, an AI-powered Ayurvedic nutrition platform that combines ancient wisdom with cutting-edge technology.
+A beautiful, modern landing page for AyurSetu, an AI-powered Ayurvedic nutrition platform that combines ancient wisdom with cutting-edge technology.
 
 ## 🌿 Features
 
@@ -36,7 +36,7 @@ A beautiful, modern landing page for Ayursutra, an AI-powered Ayurvedic nutritio
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd ayursutra_next
+cd AyurSetu_next
 ```
 
 2. Install dependencies:
@@ -111,7 +111,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-- **Email**: info@ayursutra.com
+- **Email**: info@AyurSetu.com
 - **Phone**: +1 (555) 123-4567
 - **Location**: San Francisco, CA
 

@@ -1,4 +1,4 @@
-// Data Service for Ayursutra Patient Management
+// Data Service for AyurSetu Patient Management
 import patientsData from '../../data/patients.json';
 
 class DataService {
@@ -18,7 +18,7 @@ class DataService {
 
     // Only try to load from localStorage if we're in the browser
     if (typeof window !== 'undefined') {
-      const storedData = localStorage.getItem('ayursutra_patients');
+      const storedData = localStorage.getItem('AyurSetu_patients');
       if (storedData) {
         this.data = JSON.parse(storedData);
         this.data.mealLogs = this.data.mealLogs || [];
@@ -30,7 +30,7 @@ class DataService {
 
   saveToStorage() {
     if (typeof window !== 'undefined') {
-      localStorage.setItem('ayursutra_patients', JSON.stringify(this.data));
+      localStorage.setItem('AyurSetu_patients', JSON.stringify(this.data));
       // Dispatch a custom event to notify other components
       window.dispatchEvent(new CustomEvent('patientsUpdated'));
     }

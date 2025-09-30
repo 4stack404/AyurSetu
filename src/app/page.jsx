@@ -36,7 +36,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-to-br from-[#4C8C4A] to-[#2A9D8F] rounded-full flex items-center justify-center">
               <span className="text-white text-sm font-bold">A</span>
             </div>
-            <span className="text-xl font-bold text-[#7A5C3A]">Ayursutra</span>
+            <span className="text-xl font-bold text-[#7A5C3A]">AyurSetu</span>
           </motion.div>
 
           {/* Menu */}
@@ -287,7 +287,7 @@ const OverviewSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-[#7A5C3A] mb-4">
-            Why Ayurvedic Practitioners Choose Ayursutra?
+            Why Ayurvedic Practitioners Choose AyurSetu?
           </h2>
           <p className="text-lg text-[#7A5C3A]/80 max-w-2xl mx-auto">
             The only platform that seamlessly integrates traditional Ayurvedic knowledge 
@@ -618,7 +618,7 @@ const TestimonialsSection = () => {
     {
       name: "Dr. Priya Sharma",
       role: "Senior Ayurvedic Practitioner",
-      content: "Ayursutra has transformed my practice. The comprehensive food database and Dosha analysis tools have made patient assessment incredibly precise and efficient.",
+      content: "AyurSetu has transformed my practice. The comprehensive food database and Dosha analysis tools have made patient assessment incredibly precise and efficient.",
       avatar: "👩‍⚕️",
     },
     {
@@ -658,7 +658,7 @@ const TestimonialsSection = () => {
             What Ayurvedic Practitioners Say
           </h2>
           <p className="text-lg text-[#7A5C3A]/80 max-w-2xl mx-auto">
-            Hear from experienced practitioners who have transformed their practice with Ayursutra
+            Hear from experienced practitioners who have transformed their practice with AyurSetu
           </p>
         </motion.div>
 
@@ -774,7 +774,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2 text-white/80">
-              <p>📧 info@ayursutra.com</p>
+              <p>📧 info@AyurSetu.com</p>
               <p>📞 +1 (555) 123-4567</p>
               <p>📍 San Francisco, CA</p>
             </div>
@@ -825,7 +825,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2024 Ayursutra. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 AyurSetu. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
       </footer>

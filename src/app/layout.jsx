@@ -19,12 +19,12 @@ const notoSerifDevanagari = Noto_Serif_Devanagari({
 });
 
 export const metadata = {
-  title: "Ayursutra - AI-Powered Ayurvedic Nutrition Platform",
+  title: "AyurSetu - AI-Powered Ayurvedic Nutrition Platform",
   description: "Experience personalized Ayurvedic nutrition powered by AI. Trusted by dietitians, designed for patients. Discover your Prakriti and get customized diet plans.",
   keywords: "Ayurveda, nutrition, AI, dietitian, personalized diet, Prakriti analysis, holistic health",
-  authors: [{ name: "Ayursutra Team" }],
+  authors: [{ name: "AyurSetu Team" }],
   openGraph: {
-    title: "Ayursutra - AI-Powered Ayurvedic Nutrition",
+    title: "AyurSetu - AI-Powered Ayurvedic Nutrition",
     description: "Experience personalized Ayurvedic nutrition powered by AI",
     type: "website",
   },
